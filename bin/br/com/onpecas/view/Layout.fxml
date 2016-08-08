@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.onpecas.controller.Controller">
+   <top>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="600.0" text="OnPeças.com" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <Pane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgLogo" fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label layoutX="192.0" layoutY="315.0" text="Usuario:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Txtusuario" layoutX="264.0" layoutY="313.0" />
+            <Label fx:id="lblsenha" layoutX="197.0" layoutY="361.0" text="Senha:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtsenha" layoutX="264.0" layoutY="359.0" />
+            <Button fx:id="btnentrar" layoutX="210.0" layoutY="396.0" mnemonicParsing="false" onAction="#Entrar" prefHeight="25.0" prefWidth="183.0" text="Entrar" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
